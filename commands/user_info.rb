@@ -11,7 +11,7 @@ class UserInfo
       creation_time = user.creation_time
       creation_time_utc = creation_time.utc
       distance_time = distance_of_time_in_words(now, creation_time_utc, true)
-      year_or_month = distance_time[2..6] == 'months' ? 'meses' : 'anos'
+      year_or_month = distance_time[2..7] == 'months' ? 'meses' : 'anos'
 
       event.channel.send_embed do |embed|
         embed.title = ":monkey: #{user.name}"
