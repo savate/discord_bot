@@ -13,4 +13,4 @@ A Discord bot made in Ruby.
 | !avatar | Send an embed with user mentioned avatar |
 | !agostinho (only works on my server, for now) | Send an embed with a random answer for your question |
 
-### More updates to come :) 
+### More updates coming soon :) 
