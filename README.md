@@ -10,6 +10,7 @@ A Discord bot made in Ruby.
 | --- | --- |
 | Ping | Responds with Pong |
 | !userinfo | Send an embed with the user mentioned infos |
+| !serverinfo | Send an embed with the server infos |
 | !avatar | Send an embed with user mentioned avatar |
 | !agostinho (only works on my server, for now) | Send an embed with a random answer for your question |
 
