@@ -16,4 +16,5 @@ class Wrapper
   Avatar.user_avatar(BOT)
   UserInfo.user_info(BOT)
   WebhookAnswers.answer(BOT)
+  ServerInfo.server_info(BOT)
 end
