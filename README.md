@@ -1,4 +1,4 @@
-![Ricky's sprite](https://media.discordapp.net/attachments/1011033927919620117/1019764133140369499/oie_transparent1.png)
+![Ricky's sprite](https://media.discordapp.net/attachments/1011033927919620117/1019764775976173662/ricky_sprite.png)
 
 # Ricky!
 
