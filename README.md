@@ -13,5 +13,6 @@ A Discord bot made in Ruby.
 | !serverinfo | Send an embed with the server infos |
 | !avatar | Send an embed with user mentioned avatar |
 | !agostinho (only works on my server, for now) | Send an embed with a random answer for your question |
+| !youtube | Send the video url searched (Ex: !youtube world cup goals) |
 
 ### More updates coming soon :) 
