@@ -17,4 +17,5 @@ class Wrapper
   UserInfo.user_info(BOT)
   WebhookAnswers.answer(BOT)
   ServerInfo.server_info(BOT)
+  YoutubeCommand.search(BOT)
 end
