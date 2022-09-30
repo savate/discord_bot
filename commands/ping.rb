@@ -1,7 +1,7 @@
-class Ping
-  def do_ping(bot)
-    bot.message(with_text: 'Ping') do |event|
-      event.respond 'Pong'
-    end
+module Commands
+  extend Discordrb::Commands::CommandContainer
+
+  command :ping do |event|
+      event.respond 'pong'
   end
 end

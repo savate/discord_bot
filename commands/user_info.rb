@@ -2,9 +2,10 @@ require 'dotiw'
 
 include DOTIW::Methods
 
-class UserInfo
-  def self.user_info(bot)
-    bot.command(:userinfo, arg_types: [Discordrb::User]) do |event, user|
+module Commands
+    extend Discordrb::Commands::CommandContainer
+
+    command :user_info, arg_types: [Discordrb::User] do |event, user|
       user = event.author if user.nil?
 
       now = Time.now.utc
@@ -33,5 +34,4 @@ class UserInfo
         ].join, inline: true)
       end
     end
-  end
 end
