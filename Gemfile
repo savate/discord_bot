@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'discordrb'
+gem 'discordrb', github: 'shardlab/discordrb', branch: 'main'
 gem 'dotenv'
 gem 'dotiw'
 gem 'httparty'
