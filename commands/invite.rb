@@ -1,7 +1,7 @@
-module Commands
-    extend Discordrb::Commands::CommandContainer
+module ApplicationCommands
+    extend Discordrb::EventContainer
 
-    command :invite do |event|
-        event.channel.send_message event.bot.invite_url
+    application_command(:invite) do |event|
+        event.respond(content: "#{event.bot.invite_url}")
     end
 end
