@@ -1,11 +1,17 @@
-![Ricky's sprite](https://media.discordapp.net/attachments/1011033927919620117/1019764775976173662/ricky_sprite.png)
+<p align="center">
+  <img width="200" height="200" src="https://media.discordapp.net/attachments/780264514481553441/1045881946934349844/Efu7YSUXoAAIvvb.png?width=473&height=473">
+  
+</p>
 
 # Ricky!
 
 A Discord bot made in Ruby.
 
+I made this bot reading the [Discordrb documentation](https://drb.shardlab.dev/v3.4.0/).
+
 ## Command List
 
+### Utils
 | Command | Description |
 | --- | --- |
 | Ping | Responds with Pong |
@@ -16,4 +22,7 @@ A Discord bot made in Ruby.
 | !youtube | Send the video url searched (Ex: !youtube world cup goals) |
 | !invite | Send the bot's invite url |
 
-### More updates coming soon :) 
+### Extras
+| Command | Description |
+| --- | --- |
+| !calendar | Ricky now changed his path to christianity! This command sends the orthodox church bible daily readings |
