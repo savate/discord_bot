@@ -5,6 +5,7 @@ module Commands
     extend Discordrb::Commands::CommandContainer
     doc = Nokogiri::HTML(URI.open('https://www.oca.org/readings'))
     scripture = doc.css('section ul').map { |s| s.content }
+    saints = doc.css('section p').map { |s| s.content }
 
     command :calendar do |event|
         event.channel.send_embed do |embed|
@@ -13,6 +14,9 @@ module Commands
             embed.add_field(name: 'Scripture Readings', value: [
                 "#{scripture.join('\t').gsub(/\t/, '')}"
             ].join, inline: false)
+            embed.add_field(name: 'Today’s commemorated feasts and saints', value: [
+              "#{saints.join}"
+            ].join, inline: true)
         end
     end
 end
