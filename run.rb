@@ -6,6 +6,7 @@ require_all 'commands'
 Dotenv.load
 TOKEN = ENV['TOKEN']
 
-bot = Initialize::Bot.new(TOKEN, '!')
-bot.include! Commands
+bot = Discordrb::Bot.new(token: TOKEN, intents: [:server_messages])
+bot.include! ApplicationCommands
+
 bot.run
