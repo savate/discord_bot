@@ -2,7 +2,6 @@ require 'require_all'
 require 'dotenv'
 require_all 'lib'
 require_all 'commands'
-require_all 'slash_commands'
 
 Dotenv.load
 TOKEN = ENV['TOKEN']
