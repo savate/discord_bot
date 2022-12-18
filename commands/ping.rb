@@ -1,7 +1,7 @@
-module Commands
-  extend Discordrb::Commands::CommandContainer
+module ApplicationCommands
+  extend Discordrb::EventContainer
 
-  command :ping do |event|
-      event.respond 'pong'
+  application_command(:ping) do |event|
+    event.respond(content: "Pong!")
   end
 end
