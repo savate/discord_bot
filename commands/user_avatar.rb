@@ -2,10 +2,9 @@ require 'dotenv'
 
 module ApplicationCommands
   extend Discordrb::EventContainer
+  extend BotSettings
 
-  Dotenv.load('../.env')
-  TOKEN = ENV['TOKEN']
-  bot = Discordrb::Bot.new(token: TOKEN, intents: [:server_messages])
+  bot = get_bot
 
   application_command(:user).subcommand('avatar') do |event|
     user = event.options.empty? ? event.user : bot.user(event.options['user'].to_s)
