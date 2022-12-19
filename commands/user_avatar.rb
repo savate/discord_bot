@@ -1,10 +1,22 @@
-module Commands
-  extend Discordrb::Commands::CommandContainer
+require 'dotenv'
 
-  command :useravatar, arg_types: [Discordrb::User] do |event,user|
-      user = event.author if user.nil?
-      event.channel.send_embed do |embed|
-          embed.image = Discordrb::Webhooks::EmbedImage.new(url: user.avatar_url.to_s)
+module ApplicationCommands
+  extend Discordrb::EventContainer
+
+  Dotenv.load('../.env')
+  TOKEN = ENV['TOKEN']
+  bot = Discordrb::Bot.new(token: TOKEN, intents: [:server_messages])
+
+  application_command(:user).subcommand('avatar') do |event|
+    puts event.command_id
+    user = event.options.empty? ? event.user : bot.user(event.options['user'].to_s)
+    url = "#{user.avatar_url}?size=1024"
+
+    event.respond do |builder|
+      builder.add_embed do |embed|
+        embed.title = ":frame_photo: #{user.name}"
+        embed.image = Discordrb::Webhooks::EmbedImage.new(url: url)
       end
+    end
   end
 end

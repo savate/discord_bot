@@ -9,4 +9,10 @@ bot = Discordrb::Bot.new(token: TOKEN, intents: [:server_messages])
 bot.register_application_command(:invite, "Ricky's invite URL")
 bot.register_application_command(:calendar, 'Scripture readings')
 bot.register_application_command(:ping, 'Pong!')
+bot.register_application_command(:user, 'Displays the profile avatar of a user') do |cmd|
+  cmd.subcommand('avatar', 'Displays the profile avatar of a user') do |sub|
+    sub.user('user', 'Tag a user', required: false)
+  end
+end
+
 bot.run
