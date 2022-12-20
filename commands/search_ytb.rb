@@ -2,24 +2,13 @@ require 'httparty'
 require 'dotenv'
 require 'json'
 
-module Commands
-    extend Discordrb::Commands::CommandContainer
-    Dotenv.load('./.env')
-    YOUTUBE_KEY = ENV['YOUTUBE_KEY']
+module ApplicationCommands
+  extend Discordrb::EventContainer
+  extend CommandsHelpers
 
-    def self.format_query(query)
-        query_s = query.to_s
-        request = HTTParty.get("https://youtube.googleapis.com/youtube/v3/search?maxResults=1&order=viewCount&q=#{query_s}&key=#{YOUTUBE_KEY}")
-        if request.code == 200
-          request_parsed = JSON.parse(request.body)
-          video_id = request_parsed['items'][0]['id']['videoId']
-          "https://www.youtube.com/watch?v=#{video_id}"
-        else
-          '[ERRO] Por favor tente novamente!'
-        end
-      end
 
-    command :youtube do |event, *query|
-        event.respond format_query(query)
-    end
+  application_command(:youtube) do |event|
+    video_query = query_formatter(event.options['video'])
+    event.respond(content: video_query)
+  end
 end
