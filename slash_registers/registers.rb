@@ -18,7 +18,7 @@ bot.register_application_command(:user, 'User utils') do |cmd|
   end
 end
 bot.register_application_command(:youtube, 'Search for a youtube video') do |cmd|
-  cmd.string('video',  'The video name you want to search', required: true)
+  cmd.string('video', 'The name of the video', required: true)
 end
 
 bot.run
