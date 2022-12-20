@@ -10,7 +10,7 @@ module ApplicationCommands
 
   application_command(:youtube) do |event|
     video_query = query_formatter(event.options['video'], i)
-    content = video_query
+    content = event.options['video']
     event.respond(content: video_query) do |_, view|
       view.row do |r|
         r.button(label: 'Back', style: :primary, custom_id: 'back_button')
