@@ -1,3 +1,4 @@
+require 'discordrb'
 require 'nokogiri'
 require 'open-uri'
 

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "3.1.3"
 gem 'discordrb', github: 'shardlab/discordrb', branch: 'main'
 gem 'dotenv'
 gem 'dotiw'

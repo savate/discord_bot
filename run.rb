@@ -1,7 +1,7 @@
-require 'require_all'
+require 'discordrb'
 require 'dotenv'
-require_all 'lib'
-require_all 'commands'
+require './lib/bot_settings'
+Dir['./commands/*.rb'].each { |file| require file }
 
 include BotSettings
 

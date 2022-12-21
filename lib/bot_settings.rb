@@ -1,5 +1,5 @@
 require 'discordrb'
-
+require 'dotenv'
 module BotSettings
   Dotenv.load
   TOKEN = ENV['TOKEN']

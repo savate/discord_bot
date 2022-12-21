@@ -1,3 +1,4 @@
+require 'dotenv'
 module CommandsHelpers
   Dotenv.load
   YOUTUBE_KEY = ENV['YOUTUBE_KEY']

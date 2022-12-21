@@ -1,4 +1,5 @@
 require 'dotiw'
+require './lib/bot_settings'
 
 include DOTIW::Methods
 

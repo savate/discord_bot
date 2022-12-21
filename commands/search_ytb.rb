@@ -1,6 +1,7 @@
 require 'httparty'
 require 'dotenv'
 require 'json'
+require './lib/commands_helpers'
 
 module ApplicationCommands
   extend Discordrb::EventContainer

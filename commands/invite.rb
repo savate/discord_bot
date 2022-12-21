@@ -1,3 +1,4 @@
+require 'discordrb'
 module ApplicationCommands
     extend Discordrb::EventContainer
 
