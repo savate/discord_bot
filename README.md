@@ -15,9 +15,9 @@ I made this bot reading the [Discordrb documentation](https://drb.shardlab.dev/v
 | Command | Description |
 | --- | --- |
 | /ping | Responds with Pong |
-| /userinfo | Send an embed with the user mentioned infos |
-| /serverinfo | Send an embed with the server infos |
-| /avatar | Send an embed with user mentioned avatar |
+| /user info | Send an embed with the user mentioned infos |
+| /server info | Send an embed with the server infos |
+| /user avatar | Send an embed with user mentioned avatar |
 | /youtube | Send the video url searched (Ex: !youtube world cup goals) |
 | /invite | Send the bot's invite url |
 
