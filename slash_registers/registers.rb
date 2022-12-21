@@ -20,5 +20,10 @@ end
 bot.register_application_command(:youtube, 'Search for a youtube video') do |cmd|
   cmd.string('video', 'The name of the video', required: true)
 end
+bot.register_application_command(:server, 'Server utils') do |cmd|
+  cmd.subcommand('info', 'Displays the server informations') do |sub|
+    sub.string('id', 'The id of the server', required: false)
+  end
+end
 
 bot.run
