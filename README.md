@@ -14,15 +14,14 @@ I made this bot reading the [Discordrb documentation](https://drb.shardlab.dev/v
 ### Utils
 | Command | Description |
 | --- | --- |
-| Ping | Responds with Pong |
-| !userinfo | Send an embed with the user mentioned infos |
-| !serverinfo | Send an embed with the server infos |
-| !avatar | Send an embed with user mentioned avatar |
-| !agostinho (only works on my server, for now) | Send an embed with a random answer for your question |
-| !youtube | Send the video url searched (Ex: !youtube world cup goals) |
-| !invite | Send the bot's invite url |
+| /ping | Responds with Pong |
+| /userinfo | Send an embed with the user mentioned infos |
+| /serverinfo | Send an embed with the server infos |
+| /avatar | Send an embed with user mentioned avatar |
+| /youtube | Send the video url searched (Ex: !youtube world cup goals) |
+| /invite | Send the bot's invite url |
 
 ### Extras
 | Command | Description |
 | --- | --- |
-| !calendar | Ricky now changed his path to christianity! This command sends the orthodox church bible daily readings |
+| /calendar | Ricky now changed his path to christianity! This command sends the orthodox church bible daily readings |
